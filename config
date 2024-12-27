@@ -9,6 +9,9 @@
 font-family = "IosevkaTerm Nerd Font"
 font-size = 11
 
+window-width = 180
+window-height = 45
+
 gtk-wide-tabs = false
 gtk-tabs-location = "bottom"
 
@@ -40,6 +43,9 @@ keybind = ctrl+a>shift+e=open_config
 
 # Close window (kitty close_os_window)
 keybind = ctrl+q=close_window
+
+# Crate tab
+keybind = ctrl+a>c=new_tab
 
 # Go to specified tab (kitty goto_tab)
 keybind = ctrl+a>1=goto_tab:1
