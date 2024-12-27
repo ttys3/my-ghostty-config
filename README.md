@@ -1,5 +1,9 @@
 # my-ghostty-config
 
+this is my [Ghostty](https://github.com/ghostty-org/ghostty.git) config repository, which I use to manage my Ghostty configuration.
+
+This repository should help you quickly set up a working Ghostty configuration.
+
 ## how to use the config?
 
 ```
