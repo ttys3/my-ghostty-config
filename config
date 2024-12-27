@@ -1,5 +1,7 @@
 # Ghostty config generated from Kitty config.
 # Comments are in English as requested.
+# key name see https://github.com/ghostty-org/ghostty/blob/d6e76858164d52cff460fedc61ddf2e560912d71/src/input/key.zig
+# https://ghostty.org/docs/config/keybind/reference
 
 ########################################
 # Font and basic terminal behavior
@@ -53,3 +55,17 @@ keybind = ctrl+a>ctrl+a=text:\x01
 
 # Toggle fullscreen (kitty map f11)
 keybind = f11=toggle_fullscreen
+
+########################################
+# Font size management
+########################################
+
+# default is fine https://github.com/ghostty-org/ghostty/blob/729b7ba7eda198b1cbe2e9aba659722b04ee2524/src/config/Config.zig#L2047
+
+# goto_split https://github.com/ghostty-org/ghostty/blob/869987277c6b6e9fd606c39d63dd45d34de08b13/src/config/Config.zig#L2192
+# Split navigation - vim style (hjkl)
+keybind = ctrl+a>h=goto_split:left
+keybind = ctrl+a>l=goto_split:right
+keybind = ctrl+a>k=goto_split:top
+keybind = ctrl+a>j=goto_split:bottom
+
