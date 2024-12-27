@@ -9,6 +9,9 @@
 font-family = "IosevkaTerm Nerd Font"
 font-size = 11
 
+gtk-wide-tabs = false
+gtk-tabs-location = "bottom"
+
 # Approximate the kitty scrollback_lines=8000 setting.
 # Note: This is in bytes, not lines.
 scrollback-limit = 800000
