@@ -1,0 +1,55 @@
+# Ghostty config generated from Kitty config.
+# Comments are in English as requested.
+
+########################################
+# Font and basic terminal behavior
+########################################
+font-family = "IosevkaTerm Nerd Font"
+font-size = 11
+
+# Approximate the kitty scrollback_lines=8000 setting.
+# Note: This is in bytes, not lines.
+scrollback-limit = 800000
+
+########################################
+# Keybindings (converted from kitty maps)
+########################################
+
+# Horizontal split (kitty "hsplit")
+keybind = ctrl+a>minus=new_split:down
+keybind = ctrl+a>shift+minus=new_split:down
+
+# Vertical split (kitty "vsplit")
+keybind = ctrl+a>backslash=new_split:right
+keybind = ctrl+a>shift+backslash=new_split:right
+
+# Toggle zoom (kitty zoom_toggle.py)
+keybind = ctrl+a>z=toggle_split_zoom
+
+# Reload config (kitty load_config_file)
+keybind = ctrl+a>shift+r=reload_config
+
+# Open config file (approximating the "launch nvim kitty.conf")
+# We use the built-in Ghostty "open_config", it may open the main config in the default editor
+keybind = ctrl+a>shift+e=open_config
+
+# Close window (kitty close_os_window)
+keybind = ctrl+q=close_window
+
+# Go to specified tab (kitty goto_tab)
+keybind = ctrl+a>1=goto_tab:1
+keybind = ctrl+a>2=goto_tab:2
+keybind = ctrl+a>3=goto_tab:3
+keybind = ctrl+a>4=goto_tab:4
+keybind = ctrl+a>5=goto_tab:5
+keybind = ctrl+a>6=goto_tab:6
+keybind = ctrl+a>7=goto_tab:7
+keybind = ctrl+a>8=goto_tab:8
+keybind = ctrl+a>9=goto_tab:9
+keybind = ctrl+a>0=goto_tab:10
+
+# Double ctrl+a sends literal Ctrl-A to the running app if needed
+keybind = ctrl+a>ctrl+a=text:\x01
+
+# Toggle fullscreen (kitty map f11)
+keybind = f11=toggle_fullscreen
