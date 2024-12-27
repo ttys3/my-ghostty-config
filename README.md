@@ -6,4 +6,25 @@
 cd ~/.config
 
 git clone https://github.com/ttys3/my-ghostty-config.git ghostty
+
+ghostty +validate-config
+```
+
+## How to install Ghostty from source code under Fedora Linux
+
+ref https://ghostty.org/docs/install/build
+
+```shell
+sudo dnf install gtk4-devel zig libadwaita-devel
+```
+
+```shell
+mkdir -p ~/repo/zig/
+cd ~/repo/zig/
+git clone https://github.com/ghostty-org/ghostty.git
+cd ghostty
+zig build -p $HOME/.local -Doptimize=ReleaseFast
+
+# workaround to fix the desktop file for non-root user installation
+desktop-file-edit --set-key=Exec --set-value=$HOME/.local/bin/ghostty ~/.local/share/applications/com.mitchellh.ghostty.desktop
 ```
