@@ -13,6 +13,8 @@ window-width = 180
 window-height = 45
 window-theme = ghostty
 
+theme = nord
+
 # https://ghostty.org/docs/config/reference#window-save-state
 # This is currently only supported on macOS. This has no effect on Linux.
 window-save-state = always
