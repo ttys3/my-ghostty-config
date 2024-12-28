@@ -14,6 +14,14 @@ window-height = 45
 
 theme = nord
 
+# https://ghostty.org/docs/config/reference#font-feature
+# font-feature = -liga
+# font-feature = -ss20
+# font-feature = -calt
+
+# disable dlig so that we see `--` instead of something like `—`
+font-feature = -dlig
+
 # https://ghostty.org/docs/config/reference#window-save-state
 # This is currently only supported on macOS. This has no effect on Linux.
 window-save-state = always
