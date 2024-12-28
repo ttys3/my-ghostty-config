@@ -32,3 +32,15 @@ zig build -p $HOME/.local -Doptimize=ReleaseFast
 # workaround to fix the desktop file for non-root user installation
 desktop-file-edit --set-key=Exec --set-value=$HOME/.local/bin/ghostty ~/.local/share/applications/com.mitchellh.ghostty.desktop
 ```
+
+## Troubleshooting
+
+### 1. GNOME + Wayland with `GTK_IM_MODULE=fcitx` set can not activate fcitx5 input method
+
+ref https://github.com/ghostty-org/ghostty/discussions/3628
+
+solution:
+
+```shell
+desktop-file-edit --set-key=Exec --set-value="env GTK_IM_MODULE=wayland ghostty" ~/.local/share/applications/com.mitchellh.ghostty.desktop
+```
