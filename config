@@ -11,7 +11,6 @@ font-size = 11
 
 window-width = 180
 window-height = 45
-window-theme = ghostty
 
 theme = nord
 
@@ -21,6 +20,14 @@ window-save-state = always
 
 gtk-wide-tabs = false
 gtk-tabs-location = bottom
+
+# this makes titlebar not too fat
+gtk-titlebar = false
+# this make titlebar even more slim
+gtk-adwaita = false
+
+# only works when gtk-adwaita enabled
+window-theme = ghostty
 
 
 # Approximate the kitty scrollback_lines=8000 setting.
