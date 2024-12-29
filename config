@@ -67,6 +67,9 @@ keybind = ctrl+a>shift+e=open_config
 # Close window (kitty close_os_window)
 keybind = ctrl+q=close_window
 
+# Toggle the tab overview, only works with libadwaita enabled
+keybind = ctrl+a>w=toggle_tab_overview
+
 # Crate tab
 keybind = ctrl+a>c=new_tab
 
