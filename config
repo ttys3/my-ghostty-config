@@ -57,6 +57,8 @@ keybind = ctrl+a>shift+backslash=new_split:right
 # Toggle zoom (kitty zoom_toggle.py)
 keybind = ctrl+a>z=toggle_split_zoom
 
+keybind = ctrl+a>x=close_surface
+
 # Reload config (kitty load_config_file)
 keybind = ctrl+a>shift+r=reload_config
 
