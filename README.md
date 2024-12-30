@@ -44,3 +44,11 @@ solution:
 ```shell
 desktop-file-edit --set-key=Exec --set-value="env GTK_IM_MODULE=wayland ghostty" ~/.local/share/applications/com.mitchellh.ghostty.desktop
 ```
+
+### 2. com.mitchellh.ghostty.desktop[1205160]: /usr/bin/env: ‘ghostty’: No such file or directory
+
+Add ~/.local/bin directory to PATH
+
+```shell
+sudo install -m 644 etc/profile.d/sh.local /etc/profile.d/
+```
