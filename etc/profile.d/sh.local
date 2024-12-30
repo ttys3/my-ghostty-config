@@ -1,0 +1,9 @@
+#Add any required envvar overrides to this file, it is sourced from /etc/profile
+
+# Add ~/.local/bin directory to PATH
+HOME_LOCAL_PATH="$HOME/.local/bin"
+case "$PATH" in
+    *"$HOME_LOCAL_PATH"* ) true ;;
+    * ) PATH="$PATH:$HOME_LOCAL_PATH" ;;
+esac
+
