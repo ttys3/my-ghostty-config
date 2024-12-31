@@ -30,7 +30,7 @@ gtk-wide-tabs = false
 gtk-tabs-location = bottom
 
 # this makes titlebar not too fat
-gtk-titlebar = false
+# gtk-titlebar = false
 # this make titlebar even more slim, but will also disable all adwaita related features
 #gtk-adwaita = false
 

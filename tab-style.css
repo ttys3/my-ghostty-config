@@ -4,10 +4,11 @@ https://docs.gtk.org/gtk4/css-overview.html
 https://docs.gtk.org/gtk4/css-properties.html
 */
 
-headerbar {
-  margin: 0;
+
+headerbar > windowhandle > box {
+  min-height: 24px;
   padding: 0;
-  min-height: 20px;
+  margin: 0;
 }
 
 tabbar tabbox {
