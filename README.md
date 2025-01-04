@@ -52,3 +52,5 @@ Add ~/.local/bin directory to PATH
 ```shell
 sudo install -m 644 etc/profile.d/sh.local /etc/profile.d/
 ```
+Question: should we use `~/.profile` instead ?
+
