@@ -106,6 +106,6 @@ keybind = f11=toggle_fullscreen
 # Split navigation - vim style (hjkl)
 keybind = ctrl+a>h=goto_split:left
 keybind = ctrl+a>l=goto_split:right
-keybind = ctrl+a>k=goto_split:top
-keybind = ctrl+a>j=goto_split:bottom
+keybind = ctrl+a>k=goto_split:up
+keybind = ctrl+a>j=goto_split:down
 
