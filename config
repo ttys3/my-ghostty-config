@@ -104,6 +104,7 @@ keybind = f11=toggle_fullscreen
 
 # goto_split https://github.com/ghostty-org/ghostty/blob/869987277c6b6e9fd606c39d63dd45d34de08b13/src/config/Config.zig#L2192
 # Split navigation - vim style (hjkl)
+# currently has bug under Linux, see https://github.com/ghostty-org/ghostty/issues/2866
 keybind = ctrl+a>h=goto_split:left
 keybind = ctrl+a>l=goto_split:right
 keybind = ctrl+a>k=goto_split:up
