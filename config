@@ -14,6 +14,9 @@ window-height = 45
 
 theme = nord
 
+# added PR: Implement loading custom css in the GTK app https://github.com/ghostty-org/ghostty/pull/4200
+gtk-custom-css = tab-style.css
+
 # https://ghostty.org/docs/config/reference#font-feature
 # font-feature = -liga
 # font-feature = -ss20
