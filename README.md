@@ -19,7 +19,7 @@ ghostty +validate-config
 ref https://ghostty.org/docs/install/build
 
 ```shell
-sudo dnf install gtk4-devel zig libadwaita-devel
+sudo dnf install gtk4-devel zig libadwaita-devel wayland-protocols-devel
 ```
 
 ```shell
