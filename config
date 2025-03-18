@@ -43,7 +43,9 @@ window-theme = ghostty
 
 # Approximate the kitty scrollback_lines=8000 setting.
 # Note: This is in bytes, not lines.
-scrollback-limit = 800000
+# https://github.com/ghostty-org/ghostty/blob/0f2f0ab69f65941ab85c0563abdc5583d1983527/src/config/Config.zig#L812
+# default is 10MB
+scrollback-limit = 10000000
 
 ########################################
 # Keybindings (converted from kitty maps)
